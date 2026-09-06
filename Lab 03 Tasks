@@ -1,4 +1,6 @@
-//Question #1
+//Lab 3 Tasks
+
+//Question #1 ---> Write a C program to print a simple detail on the screen. Name, age, department, Student ID, Section and University name.
 
 #include <stdio.h>
 
@@ -12,7 +14,7 @@ int main(){
     return 0;
 }
 
-//Question #2
+//Question #2 ---> Write a C Program to take input from user. It should be Name, age, department, Student ID, University name and then display details.
 
 #include <stdio.h>
 
@@ -54,7 +56,7 @@ int main() {
     return 0;
 }
 
-//Question #3
+//Question #3 ---> Write a C program that takes a distance in kilometers from the user and converts it to meters and centimeters.
 
 #include <stdio.h>
 
@@ -67,7 +69,7 @@ int main(){
     return 0;
 }
 
-//Question #4
+//Question #4 ---> Write a C program to calculate the area of a triangle. Take base and height as input from the user.
 
 #include <stdio.h>
 
@@ -81,7 +83,7 @@ int main(){
     return 0;
 }
 
-//Question #5
+//Question #5 ---> Write a C program that takes two numbers as input and swaps their values without using a third variable.
 
 #include <stdio.h>
 
