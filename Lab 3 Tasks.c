@@ -1,0 +1,101 @@
+
+//Question #1
+
+#include <stdio.h>
+
+int main(){
+    printf("Name: Mohammad Ahmed \n");
+    printf("Age: 19 years \n");
+    printf("Department: Computer Science \n");
+    printf("Student ID: 26K-0662 \n");
+    printf("Section: 1D \n");
+    printf("University: FAST-NUCES \n");
+    return 0;
+}
+
+// Question #2
+
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    int age;
+    char department[50];
+    char studentID[20];
+    char university[100];
+
+    printf("Enter Name: ");
+    fgets(name, sizeof(name), stdin);
+
+    printf("Enter Age: ");
+    scanf("%d", &age);
+    getchar(); 
+
+    printf("Enter Department: ");
+    fgets(department, sizeof(department), stdin);
+
+    printf("Enter Student ID: ");
+    fgets(studentID, sizeof(studentID), stdin);
+
+    printf("Enter University Name: ");
+    fgets(university, sizeof(university), stdin);
+
+    name[strcspn(name, "\n")] = '\0';
+    department[strcspn(department, "\n")] = '\0';
+    studentID[strcspn(studentID, "\n")] = '\0';
+    university[strcspn(university, "\n")] = '\0';
+
+    printf("\n----- Student Details -----\n");
+    printf("Name           : %s\n", name);
+    printf("Age            : %d\n", age);
+    printf("Department     : %s\n", department);
+    printf("Student ID     : %s\n", studentID);
+    printf("University     : %s\n", university);
+
+    return 0;
+}
+
+// Question #3
+
+#include <stdio.h>
+
+int main(){
+    int DistanceInKm;
+    printf("Enter distance in kilometers: ");
+    scanf("%d", &DistanceInKm);
+    printf("Distance in meters: %d \n", 1000 * DistanceInKm);
+    printf("Distance in centimeters: %ld \n", 100000L * DistanceInKm);
+    return 0;
+}
+
+//Question #4
+
+#include <stdio.h>
+
+int main(){
+    float base,height;
+    printf("Enter base of a triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of a triangle: ");
+    scanf("%f", &height);
+    printf("Area of triangle is: %f", 0.5*base*height);
+    return 0;
+}
+
+// Question #5
+
+#include <stdio.h>
+
+int main(){
+    int num1,num2;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    num1=num1+num2;
+    num2=num1-num2;
+    num1=num1-num2;
+    printf("After swapping: num1=%d, num2=%d\n", num1,num2);
+    return 0;
+}
+
