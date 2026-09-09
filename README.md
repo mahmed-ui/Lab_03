@@ -16,7 +16,7 @@ as a developer.
 
 ## 🗂️ Structure
 Organized folder-wise by topic or date, e.g.:
-/python-basics
+/c-basics
 /data-structures
 /daily-challenges
 
